@@ -6,7 +6,12 @@ function getTest(req, res) {
     res.render('about-cv')
 }
 
+function getProjects(req,res){
+    res.render('app-info')
+}
+
 module.exports = {
     getIndex,
-    getTest
+    getTest,
+    getProjects
 };
