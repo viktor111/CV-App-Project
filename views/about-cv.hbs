@@ -28,8 +28,91 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-    {{> top}}
-<img src="/img/cvImg.jpg" alt="Image Of Me">
-<h1>Work in progress....</h1>
+{{> top}}
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <img src="/img/cvImg.jpg" alt="img me" class="img-thumbnail" width="200px" height="200px">
+            </div>
+            <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h2>Viktor Draganov CV</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Personal Data
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p><strong>Name:</strong> Viktor Draganov</p>
+                        <p><strong>Country:</strong> Bulgartia</p>
+                        <p><strong>City:</strong> Stara Zagora</p>
+                        <p><strong>Email:</strong> swifrorlilko@gmail.com</p>
+                        <p><strong>Phone:</strong> 089-531-3156</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        Skills
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">JS</div>
+                        </div>
+                        <br>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">NodeJs</div>
+                        </div>
+                        <br>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                        </div>
+                        <br>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                        </div>
+                        <br>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+                        </div>
+                        <br>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">C#</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        Experience
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>I studied year and half in softuni starting out with c# but then moving onto JS.</p>
+                        <p>I have worked on some small personal projects you can check in this application.</p>
+                        <p>Also i will study angular and react as frontend frameworks after i fully learn database mongodb.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{{> bottom}}
 </body>
 </html>
