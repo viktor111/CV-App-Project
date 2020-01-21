@@ -6,4 +6,5 @@ I have used nodejs for the structure for the templating handlebars and bootstrap
 How to run and test:
 1. clone or download
 2. open console and cd in the installed directory of cv folder
-3. type npm start to run the server
+3. type npm start to run the serveor
+'test from linux/vim'
